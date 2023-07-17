@@ -1,0 +1,83 @@
+.ACart {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ACart img {
+  margin-right: 10px;
+}
+
+.left__part {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: flex-start;
+  /* background-color: red; */
+}
+
+.left__part > h3 {
+  flex: 1;
+}
+
+.inf1 {
+  text-align: left;
+}
+
+.inf2 {
+  text-align: center;
+}
+
+.inf3 {
+  text-align: center;
+}
+
+.right__part {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: blue; */
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.right__part button {
+  padding: 10px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.right__part .button__delete {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .ACart {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .right__part {
+    width: 100%;
+    justify-content: center;
+  }
+  .left__part {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .ACart {
+    gap: 2rem;
+  }
+  .left__part {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ACart h3 {
+    text-align: center;
+  }
+}
